@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="FIS 2020 CSS.css">
+    <title>Swipestyle</title>
+    <link rel="stylesheet" href="swipestyle.css">
 </head>
 
 <body>
-    <h2 class="space">Finish your profile now!</h2>
+    <p id="instructions"><strong>Complete your profile below!</strong></p>
 
-<!-- Form for more specfic Profile Information then redirects you to your best picks-->
-
-    <form action="FIS 2020 HTML.html">
+<!-- Form for more specfic Profile Information then redirects you to your best picks, next page is job.html -->
+<form action="job.html">
+    <form action="http://BACKEND/students/add/specific" method="post">
         <p class="space">
-            Phone Number: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            Phone Number (ex: 123-456-7890): <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         </p>
         <p class="space">
-            Major: <select>
-                <option value="none">None</option>
+            Major: <select name="major">
+                <option value="">Select</option>
                 <option value="cs">Computer Science</option>
                 <option value="it">Information Technology</option>
                 <option value="da">Data Analytics</option>
@@ -26,16 +27,17 @@
             Skills:
         </p>
         <p class="space">
-            <input class="space" type="checkbox"><label value="pds">Product Supply</label>
-            <input class="space" type="checkbox"><label value="emu">Emulation</label>
-            <input class="space" type="checkbox"><label value="alg">Algorithms</label>
-            <input class="space" type="checkbox"><label value="dat">Data Analytics</label>
+            <input class="space" type="checkbox" name="skills"><label class="space" value="pds">Product Supply</label><br>
+            <input class="space" type="checkbox" name="skills"><label class="space" value="emu">Emulation</label><br>
+            <input class="space" type="checkbox" name="skills"><label class="space" value="alg">Algorithms</label><br>
+            <input class="space" type="checkbox" name="skills"><label class="space" value="dat">Data Analytics</label>
         </p>
         <p class="space">
-            Interests: <input type="email" id="email" name="email">
+            Interests (use a comma to separate interests): <input type="text" id="interests" name="interests" size="50"> <!-- What should this look like? How would we use this?-->
         </p>
-        <p><a class="space" href="profile.html"><input type="button" value="Go Back"></a><a href="FIS 2020 HTML.html"><input type="submit" value="See your best fit"></a></p>
+        <p><a class="space" href="profile.html"><input type="button" value="Go Back"></a><a href="job.html"><input type="submit" value="Continue"></a></p>
     </form>
+</form>
 </div>
 
 </body>

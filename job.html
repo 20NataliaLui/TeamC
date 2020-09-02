@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swipestyle</title>
+    <link rel="stylesheet" href="swipestyle.css">
+</head>
+
+<body>
+    <p id="instructions"><strong>What type of job are you looking for?</strong></p>
+
+<!-- Form for job listings available, next page is swipe.html -->
+<form action="swipe.html">
+    <form action="http://BACKEND/students/add/job" method="post">
+        <p class="space">
+            Pay per Hour: <input type="number" id="pay" name="pay" min="8" max="24">
+        </p>
+        <p class="space">
+            Hours: <input type="number" id="hour" name="hour" min="16" max="40">
+        </p>
+        <p class="space">
+            Experience: <input type="text" id="exp" name="exp"> <!-- Can be in the format of checkbox or list, currently in box -->
+        <p>
+        <p class="space">
+            Work Atmosphere: <!-- Radio or Checkbox? -->
+        </p>
+        <p class="space">
+            <input class="space" type="checkbox" name="work"><label class="space" value="casu">Casual</label>
+            <input class="space" type="checkbox" name="work"><label class="space" value="prof">Professional</label>
+            <input class="space" type="checkbox" name="work"><label class="space" value="busy">Busy</label>
+            <input class="space" type="checkbox" name="work"><label class="space" value="flex">Flexible</label>
+            <!-- Add an "other" option -->
+        </p>
+        <p><a class="space" href="specific.html"><input type="button" value="Go Back"></a><a href="swipe.html"><input type="submit" value="See your best fit"></a></p>
+    </form>
+</form>
+</div>
+
+</body>
+</html>

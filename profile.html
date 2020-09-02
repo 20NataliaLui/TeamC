@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="FIS 2020 CSS.css">
+    <title>Swipestyle</title>
+    <link rel="stylesheet" href="swipestyle.css">
 </head>
 
 <body>
-    <h2 class="space">Create your profile below:</h2>
+    <p id="instructions"><strong>Create your profile below!</strong></p>
 
-<!-- Form for basic Profile Information-->
-
-    <form action="specific.html">
+<!-- Form for basic Profile Information, next page is specific.html -->
+<form action="specific.html">
+    <form action="http://BACKEND/students/add" method="post">
         <p class="space">
-            Name: <input type="text" id="name">
+            Name: <input type="text" id="name" name="student-name">
         </p>
         <p class="space">
-            School: <input type="text" id="school">
+            School: <input type="text" id="school" name="school">
         <p>
         <p class="space">
-            Graduation Year: <input type="number" id="grad-year"min="2020" max="2050">
+            Graduation Year: <input type="number" id="grad-year" name="grad-year" min="2020" max="2050">
         </p>
         <p class="space">
-            Enter your School Email: <input type="email" id="email">
+            Enter your School Email: <input type="email" id="email" name="email">
         </p>
         <p class="space">
-            Select resume: <input type="file" id="img" accept="image/*">
+            Select resume: <input type="file" id="img" name="img" accept="image/*">
         </p>
         <p class="space">
             <a href="specific.html"><input type="submit" value="Continue"></a>
         </p>
     </form>
+</form>
 </div>
 
 </body>
